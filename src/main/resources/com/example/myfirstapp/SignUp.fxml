@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfirstapp.controllers.SignUpController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+
+        <Label fx:id="welcomeText" />
+        <AnchorPane prefHeight="400.0" prefWidth="700.0">
+            <children>
+                <AnchorPane layoutY="86.0" prefHeight="314.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+                    <children>
+                        <TextField fx:id="login_field" layoutX="71.0" layoutY="74.0" prefHeight="25.0" prefWidth="231.0" promptText="Логин" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </TextField>
+                        <PasswordField fx:id="password_field" layoutX="350.0" layoutY="74.0" prefHeight="25.0" prefWidth="231.0" promptText="Пороль" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </PasswordField>
+                        <Button fx:id="SignUpButton" layoutX="321.0" layoutY="255.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="224.0" style="-fx-background-color: #2E3348;" text="Зарегистрироваться" textFill="WHITE">
+                            <contextMenu>
+                                <ContextMenu>
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                                    </items>
+                                </ContextMenu>
+                            </contextMenu>
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                        </Button>
+                  <TextField fx:id="signUpLastName" layoutX="350.0" layoutY="14.0" prefHeight="25.0" prefWidth="231.0" promptText="Фамилия" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="signUpName" layoutX="71.0" layoutY="14.0" prefHeight="25.0" prefWidth="231.0" promptText="Имя" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <CheckBox fx:id="signUpCheckBoxMale" layoutX="226.0" layoutY="157.0" mnemonicParsing="false" selected="true" text="Мужчина" />
+                  <CheckBox fx:id="signUpCheckBoxFemale" layoutX="358.0" layoutY="157.0" mnemonicParsing="false" text="Женщина" />
+                  <TextField fx:id="signUpCountry" layoutX="206.0" layoutY="193.0" prefHeight="25.0" prefWidth="231.0" promptText="Страна" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                    </children>
+                </AnchorPane>
+                <Label layoutX="290.0" layoutY="-19.0" prefHeight="122.0" prefWidth="184.0" text="ItUlan" textFill="WHITE">
+                    <font>
+                        <Font name="MoolBoran" size="56.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
